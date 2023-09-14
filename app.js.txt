@@ -1,0 +1,55 @@
+$(function(){
+ 
+    var $registerform=$("#register")
+     
+    $registerform.validate({
+        rules:{
+              username:{
+                required:true
+              },
+              email:{
+                required:true
+              },
+              mobile:{
+                required:true
+              },
+              gender:{
+                required:true
+              },
+              country:{
+                required:true
+              },
+              password:{
+                required:true
+              },
+              cpassword:{
+                required:true
+              }
+        },
+        messagess:{
+               username:{
+                required:'this field is mandatory'
+               },
+               email:{
+                required:'this field is mandatory'
+               },
+               mobile:{
+                required:'mobile no required'
+               },
+               gender:{
+                required:'please check'
+               },
+               country:{
+                required:'please select country'
+               },
+               password:{
+                required:'password is required'
+               },
+               cpassword:{
+                required:'this can\'t be empty '
+               }
+
+
+        }
+    })
+});
